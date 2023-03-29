@@ -1,38 +1,174 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.fundo{
+  width: 100%;
+  height: 100vh;
+  background-color:#F7FAFC ;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.container{
+  max-width: calc(1440px + 2%);
+  width: 100%;
+  padding: 3%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.clear{
+  clear: both;
+}
+.input{
+  width: 352px!important;
+}
+.titulo{
+  color: #1A202C;
+  font-weight: 800;
+  font-size: 36px;
+}
+.texto{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 32px 0;
+}
+.box-form{
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 32px;
+  gap: 32px;
+}
+.label{
+  display: block;
+  margin-bottom: 8px;
+}
+.botao{
+  width: 110px;
+  height: 48px;
+  border-radius: 4px;
+  color:white;
+}
+.box{
+  padding: 28px;
+  width: 384px;
+  min-height: 168px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+.titulo-box{
+  width: 384px;
+  height: 28px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+    color: #171923;
+}
+.texto-box{
+  max-width: 328px;
+  width: 100%;
+  height: 112px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #718096;
+}
+.phone{
+  width: 15px;
+  height: 15px;
+  background-image: url('./assets/phone.png');
+  background-size: 100% 100%;
+  margin-right: 10.5px;
+  margin-bottom: 20px;
+}
+.email{
+  width: 16.67px;
+  height: 15px;
+  background-image: url('./assets/email.png');
+  background-size: 100% 100%;
+  margin-right: 9.67px;
+  margin-bottom: 20px;
+}
+.location{
+  width: 15px;
+  height: 18.11px;
+  background-image: url('./assets/location.png');
+  background-size: 100% 100%;
+  margin-right: 10.5px;
+}
+.cards{
+  width: 384px;
+}
+.box-form .titulo ,.box-form .texto{
+  display: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 1250px) {
+  .container{
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+  .fundo{
+    display: block;
+    padding: 5%;
+  }
+  .formulario{
+    margin: 0 auto;
+  }
+  .cards{
+    width: 100%;
+  }
+  .box,.titulo-box{
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .texto-box{
+    margin: 0 auto;
+  }
+ 
+}
+@media screen and (max-width:968px) {
+  .input{
+    width: 100%!important;
+    margin-bottom: 32px;
+  }
+  .botao{
+    margin-top: 42px;
+    width: 100%;
+  }
+  .textarea{
+    margin-top: 32px;
+  }
+  .box-form{
+    display: block;
+  }
+}
+@media screen and (max-width: 425px) {
+  .box-form .titulo ,.box-form .texto{
+    display: block;
+  }
+  .titulo , .texto{
+    display: none;
+  }
+  .cards{
+    width: 100%;
+  }
+  .box{
+    padding: 10% 3%!important;
   }
 }
